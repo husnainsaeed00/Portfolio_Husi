@@ -197,7 +197,7 @@ nav a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 90%;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -434,26 +434,26 @@ article .icon {
 
 #contact {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  align-items: center; /* Center the content vertically */
+  padding: 2rem 0; /* Add padding to create separation */
 }
 
 .contact-info-upper-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Change to column layout */
+  align-items: center; /* Center the content vertically */
   border-radius: 2rem;
   border: var(--button-border);
   border-color: var(--container-border);
   background: var(--background-color);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  margin: 2rem 0; /* Add margin to separate it from the projects section */
+  padding: 1rem; /* Adjust padding as needed */
 }
 
 .contact-info-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
 }
@@ -473,8 +473,14 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  padding: 1rem 0; /* Add padding to create separation */
+  background-color: var(--background-color); /* Add background color if needed */
+  border-top: 1px solid var(--container-border); /* Add a border at the top for separation */
+  margin-top: 2rem; /* Add margin to separate it from the projects section */
 }
 
 footer p {
